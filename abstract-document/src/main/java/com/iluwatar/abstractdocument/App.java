@@ -30,6 +30,10 @@ import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 抽象文档模式可以处理额外的非静态属性。此模式使用特征概念来实现类型安全并将不同类的属性分离到一组接口中。
+ * 在抽象文档模式中，(AbstractDocument) 完全实现了 Document) 接口。
+ * 然后定义特征以允许以通常的静态方式访问属性
+ *
  * The Abstract Document pattern enables handling additional, non-static properties. This pattern
  * uses concept of traits to enable type safety and separate properties of different classes into
  * set of interfaces.

@@ -31,6 +31,9 @@ import java.util.List;
  */
 public abstract class LetterComposite {
 
+  /**
+   * 最好不要声明在抽象对象中，子节点不存在子类时，会导致空间浪费；
+   */
   private final List<LetterComposite> children = new ArrayList<>();
 
   public void add(LetterComposite letter) {
